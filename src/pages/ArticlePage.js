@@ -1,13 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { AnimateSharedLayout, AnimatePresence } from 'framer-motion';
-import { Header } from "../Header";
 import { Item } from "../Wordboxes/Item";
 import { List } from "../Wordboxes/List";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
-import { motion } from "framer-motion";
-import {screens} from "../data/dat.js";
 
 function Store({ match }) {
   let { id } = match.params;
@@ -23,8 +19,6 @@ function Store({ match }) {
   );
 }
 
-
-
 export function ArticlePage() {
 
   return (
@@ -39,7 +33,3 @@ export function ArticlePage() {
     
   );
 }
-
-
-/* https://reactrouter.com/web/guides/scroll-restoration
- */
